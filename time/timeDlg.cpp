@@ -6,6 +6,7 @@
 #include "time.h"
 #include "timeDlg.h"
 #include "afxdialogex.h"
+#include "cmath"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -64,6 +65,7 @@ BEGIN_MESSAGE_MAP(CtimeDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_time, &CtimeDlg::OnBnClickedtime)
+	ON_WM_MOUSEMOVE()
 END_MESSAGE_MAP()
 
 
@@ -163,5 +165,25 @@ void CtimeDlg::OnBnClickedtime()
 	CPen pen(PS_SOLID,3,RGB(0,0,255));
 	oldpen=dc.SelectObject(&pen);
 	dc.Ellipse(-100,100,100,-100);
-	dc.Ellipse(-5,-5,5,5);
+	dc.Ellipse(-1,-1,1,1);
+	dc.TextOutW(90,-8,L"3");
+	dc.TextOutW(-98,-8,L"9");
+	dc.TextOutW(-8,-99.5,L"12");
+	dc.TextOutW(-2,83,L"6");
+	for(int i=0;i<12;i++)
+	{
+		double l=90,ag=i*3.1415926/6;
+		double a=l*sin(ag)+1,b=-l*cos(ag)+1,c=l*sin(ag)-1,d=-l*cos(ag)-1;
+		dc.Ellipse(a,b,c,d);
+
+	}
+}
+
+
+
+void CtimeDlg::OnMouseMove(UINT nFlags, CPoint point)
+{
+	// TODO: 在此添加消息处理程序代码和/或调用默认值
+	TRACE("X=%d,Y=%d\n",point.x,point.y);
+	CDialogEx::OnMouseMove(nFlags, point);
 }

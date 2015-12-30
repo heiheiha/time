@@ -31,4 +31,5 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnBnClickedtime();
+	afx_msg void OnMouseMove(UINT nFlags, CPoint point);
 };

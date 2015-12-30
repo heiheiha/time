@@ -1,20 +1,20 @@
-﻿生成启动时间为 2015/12/29 22:39:45。
+﻿生成启动时间为 2015/12/30 19:33:22。
      1>项目“E:\time\time\time.vcxproj”在节点 2 上(build 个目标)。
-     1>PrepareForBuild:
-         正在创建目录“E:\time\Debug\”。
-       InitializeBuildStatus:
+     1>InitializeBuildStatus:
          正在创建“Debug\time.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         c:\Users\lenovo\Desktop\新建文件夹 (2)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\time.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         c:\Users\lenovo\Desktop\新建文件夹 (2)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\time.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt time.cpp timeDlg.cpp
+         所有输出均为最新。
+         c:\Users\lenovo\Desktop\新建文件夹 (2)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\time.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt timeDlg.cpp
          timeDlg.cpp
-         time.cpp
-         正在生成代码...
+     1>e:\time\time\timedlg.cpp(171): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>e:\time\time\timedlg.cpp(177): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>e:\time\time\timedlg.cpp(177): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>e:\time\time\timedlg.cpp(177): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>e:\time\time\timedlg.cpp(177): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
        ResourceCompile:
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\time.res" time.rc 
+         所有输出均为最新。
        ManifestResourceCompile:
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\time.exe.embed.manifest.res" Debug\time_manifest.rc 
+         所有输出均为最新。
        Link:
          c:\Users\lenovo\Desktop\新建文件夹 (2)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\time\Debug\time.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\time.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\time\Debug\time.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\time\Debug\time.lib" /MACHINE:X86 Debug\time.res
          Debug\time.exe.embed.manifest.res
@@ -23,13 +23,9 @@
          Debug\timeDlg.obj
        Manifest:
          c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\time.exe.embed.manifest" /manifest Debug\time.exe.intermediate.manifest "c:\Users\lenovo\Desktop\新建文件夹 (2)\VC\Include\Manifest\dpiaware.manifest"
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\time.exe.embed.manifest.res" Debug\time_manifest.rc 
+         所有输出均为最新。
        LinkEmbedManifest:
-         c:\Users\lenovo\Desktop\新建文件夹 (2)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\time\Debug\time.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\time.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\time\Debug\time.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\time\Debug\time.lib" /MACHINE:X86 Debug\time.res
-         Debug\time.exe.embed.manifest.res
-         Debug\stdafx.obj
-         Debug\time.obj
-         Debug\timeDlg.obj
+         所有输出均为最新。
          time.vcxproj -> E:\time\Debug\time.exe
        FinalizeBuildStatus:
          正在删除文件“Debug\time.unsuccessfulbuild”。
@@ -38,4 +34,4 @@
 
 生成成功。
 
-已用时间 00:00:12.34
+已用时间 00:00:00.69
