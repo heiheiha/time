@@ -1,35 +1,12 @@
-﻿生成启动时间为 2015/12/31 10:21:33。
+﻿生成启动时间为 2016/1/2 15:09:27。
      1>项目“E:\time\time\time.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\time.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          所有输出均为最新。
-         c:\Users\lenovo\Desktop\新建文件夹 (2)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\time.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt timeDlg.cpp
-         timeDlg.cpp
-     1>e:\time\time\timedlg.cpp(177): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(183): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(183): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(183): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(183): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(213): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(219): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(219): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(219): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(219): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(228): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(228): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(235): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(235): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(244): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(244): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(251): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(251): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(260): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(260): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(267): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-     1>e:\time\time\timedlg.cpp(267): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-       ResourceCompile:
          所有输出均为最新。
+       ResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\time.res" time.rc 
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
@@ -51,4 +28,4 @@
 
 生成成功。
 
-已用时间 00:00:00.78
+已用时间 00:00:00.76

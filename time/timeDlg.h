@@ -35,4 +35,7 @@ public:
 	afx_msg void OnBnClickedtime();
 	afx_msg void OnMouseMove(UINT nFlags, CPoint point);
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	int m_h;
+	int m_m;
+	int m_s;
 };

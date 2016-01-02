@@ -51,6 +51,9 @@ END_MESSAGE_MAP()
 
 CtimeDlg::CtimeDlg(CWnd* pParent /*=NULL*/)
 	: CDialogEx(CtimeDlg::IDD, pParent)
+	, m_h(0)
+	, m_m(0)
+	, m_s(0)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -58,6 +61,9 @@ CtimeDlg::CtimeDlg(CWnd* pParent /*=NULL*/)
 void CtimeDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Text(pDX, IDC_hour, m_h);
+	DDX_Text(pDX, IDC_minute, m_m);
+	DDX_Text(pDX, IDC_second, m_s);
 }
 
 BEGIN_MESSAGE_MAP(CtimeDlg, CDialogEx)
@@ -102,7 +108,7 @@ BOOL CtimeDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
-	SetTimer(1,10,NULL);
+	SetTimer(1,1000,NULL);
 	secag=-0.05;
 	minag=-0.05;
 	hag=-0.05;
@@ -165,6 +171,12 @@ HCURSOR CtimeDlg::OnQueryDragIcon()
 void CtimeDlg::OnBnClickedtime()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(true);
+	hag=m_h*(3.1415926/6)+m_m*(3.1415926/360)+m_s*(3.1415926/21600);
+	minag=m_m*(3.1415926/30)+m_s*(3.1415926/1800);
+	secag=m_s*(3.1415926/30);
+	SetTimer(1,1000,NULL);
+	/*
 	CClientDC dc(this);
 	dc.SetWindowOrg(0-150,0-150);
 	CPen *oldpen;
@@ -182,9 +194,8 @@ void CtimeDlg::OnBnClickedtime()
 		double a=l*sin(ag)+1,b=-l*cos(ag)+1,c=l*sin(ag)-1,d=-l*cos(ag)-1;
 		dc.Ellipse(a,b,c,d);
 	}
-
+	*/
 }
-
 
 
 void CtimeDlg::OnMouseMove(UINT nFlags, CPoint point)
@@ -267,9 +278,6 @@ void CtimeDlg::OnTimer(UINT_PTR nIDEvent)
 	dc.LineTo(x,y);
 	if(hag>=6.2831852)
 		hag=-3.1415926/21600;
-
-
-
 
 	CDialogEx::OnTimer(nIDEvent);
 	
